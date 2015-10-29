@@ -1,0 +1,15 @@
+<div class="container">
+  <toaster-container></toaster-container>
+
+  <form name="nuevoCli" ng-submit="cargarClietes(nuevoCli)" novalidate>
+
+         <div class="form-group">
+         <input type="text" name="nombre" ng-model="nombre" class="form-control" placeholder="Nombre..."  minlength="3" required />
+
+         </div>
+
+         <button class="btn btn-primary" type="submit">Cargar</button>
+     </form>
+    <!-- <pre>{{nuevoCli.nombre | json}}</pre> -->
+  <div  id="grid1" ui-grid="gridOptions" ui-grid-edit class="grilla"></div>
+</div>
