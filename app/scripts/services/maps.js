@@ -13,15 +13,15 @@ angular.module('dashboardApp')
 
   function create(latitude, longitude) {
         var marker = {
+          coords:{
+            latitude: latitude,
+            longitude: longitude
+          },
             options: {
                 animation: 1,
                 labelAnchor: "28 -5",
                 labelClass: 'markerlabel'
             },
-            coords:{
-              latitude: latitude,
-              longitude: longitude
-            },            
             id: ++markerId
         };
         return marker;

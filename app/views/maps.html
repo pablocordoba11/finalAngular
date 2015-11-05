@@ -1,15 +1,16 @@
 <h1>Mapa</h1>
-<ui-gmap-google-map center='map.center' zoom='map.zoom' dragging="true">
-  <ui-gmap-marker coords="marker.coords" options="marker.options" events="marker.events" idkey="marker.id">
+<ui-gmap-google-map center="map.center" zoom="map.zoom" draggable="true" control="map.control">
+    <ui-gmap-marker coords="marker.coords" options="marker.options" idkey="marker.id">
 </ui-gmap-google-map>
-<div class="controls">
+
+<div class="container">
             <br>
             <p>
-                <button class="btn btn-primary" ng-click="addCurrentLocation()">Current location</button>
+                <button class="btn btn-primary" ng-click="addCurrentLocation()">Ubicación actual</button>
             </p>
-            <h3>Address search</h3>
+            <h3>Dirección</h3>
             <p>
-                <input type="text" placeholder="Address. i.e: Concha Espina 1, Madrid" ng-model="address" style="width: 210px"/>
-                <button ng-click="addAddress()">Look up!</button>
+                <input type="text" placeholder="Cordoba 1250, Rosario, Santa Fe, Argentina" ng-model="address" class="col-lg-8"/>
+                <button class="btn btn-success" ng-click="addAddress()">Buscar</button>
             </p>
 </div>
