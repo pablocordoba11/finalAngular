@@ -85,3 +85,6 @@ body {
   width: 800px;
   height: 250px;
 }
+.angular-google-map-container {
+  height: 400px;
+  }

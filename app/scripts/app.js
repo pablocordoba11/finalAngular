@@ -17,13 +17,14 @@ angular
     'ngSanitize',
     'ngTouch',
     'ui.grid',
-    'toaster'
+    'toaster',
+    'uiGmapgoogle-maps'
   ])
-  .config(function ($routeProvider) {
+  .config(function ($routeProvider,uiGmapGoogleMapApiProvider) {
     $routeProvider
       .when('/', {
-        templateUrl: 'views/clientes.html',
-        controller: 'ClienteCtrl',
+        templateUrl: 'views/maps.html',
+        controller: 'MapsCtrl',
         //controllerAs: 'cliente'
       })
       .when('/about', {
@@ -34,7 +35,13 @@ angular
       .otherwise({
         redirectTo: '/'
       });
+    uiGmapGoogleMapApiProvider.configure({
+        //    key: 'your api key',
+        v: '3.20', //defaults to latest 3.X anyhow
+        libraries: 'weather,geometry,visualization'
+    });
   })
+
   .run(function ($rootScope, $location, $route, $timeout) {
         console.log($location.url());
         $rootScope.layout = {};
