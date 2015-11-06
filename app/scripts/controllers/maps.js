@@ -46,6 +46,7 @@ autocomplete();
         $scope.map.markers.push($scope.PickupmealMarker);
 
         $scope.addCurrentLocation = function () {
+          $scope.map.markers.length = 0;
                 factoryMaps.createByCurrentLocation(function (marker) {
                     marker.options.labelContent = 'Usted está aquí';
                     $scope.map.markers.push(marker);
@@ -56,6 +57,7 @@ autocomplete();
 
 
             $scope.addAddress = function() {
+              $scope.map.markers.length = 0;
                 var address = $scope.address;
                 console.log(address);
                 if (address !== '') {
@@ -72,6 +74,16 @@ autocomplete();
             function refresh(coords) {
             $scope.map.control.refresh({latitude: coords.latitude,
                 longitude: coords.longitude});
+        }
+        // Borrar markers existentes
+        function setMapOnAll(map) {
+          for (var i = 0; i < $scope.map.markers.length; i++) {
+            $scope.map.markers[i].setMap(map);
+          }
+        }
+        function deleteMarkers() {
+              setMapOnAll(null);
+              markers = [];
         }
 
   }]);

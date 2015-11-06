@@ -89,3 +89,6 @@ body {
   height: 400px;
   }
 .markerlabel{font-size: 15px}
+.padding{
+  padding-left: 0px;
+}
