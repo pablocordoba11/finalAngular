@@ -20,7 +20,7 @@ angular.module('dashboardApp')
             options: {
                 animation: 1,
                 labelAnchor: "28 -5",
-                labelClass: 'markerlabel'
+                labelClass: 'markerlabel' //clase css
             },
             id: ++markerId
         };

@@ -1,6 +1,7 @@
 <h1>Mapa</h1>
-<ui-gmap-google-map center="map.center" zoom="map.zoom" draggable="true" control="map.control">
-    <ui-gmap-marker coords="marker.coords" options="marker.options" idkey="marker.id">
+<ui-gmap-google-map center="map.center" zoom="map.zoom" draggable="true" control="map.control" options="map.options" events="maps.events">
+  <ui-gmap-marker ng-repeat="m in map.markers" coords="m.coords"
+  icon="m.icon" idkey="m.id" options="m.options"></ui-gmap-marker>
 </ui-gmap-google-map>
 
 <div class="container">
@@ -10,7 +11,7 @@
             </p>
             <h3>Dirección</h3>
             <p>
-                <input type="text" placeholder="Cordoba 1250, Rosario, Santa Fe, Argentina" ng-model="address" class="col-lg-8"/>
+                <input id="searchBox" type="text" placeholder="Cordoba 1250, Rosario, Santa Fe, Argentina" ng-model="address" class="col-lg-8"/>
                 <button class="btn btn-success" ng-click="addAddress()">Buscar</button>
             </p>
 </div>
