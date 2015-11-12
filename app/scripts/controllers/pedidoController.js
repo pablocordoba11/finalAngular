@@ -8,7 +8,7 @@
  * Controller of the dashboardApp
  */
 angular.module('dashboardApp')
-  .controller('MapsCtrl',['factoryMaps', '$scope', function (factoryMaps, $scope) {
+  .controller('pedidoCtrl',['factoryMaps', '$scope', function (factoryMaps, $scope) {
     console.log("Controladora mapas");
 
   factoryMaps.createByCoords(-33.333333, -60.216667, function (marker) {

@@ -92,3 +92,15 @@ body {
 .padding{
   padding-left: 0px;
 }
+.button-fix{
+  width: 28%;
+}
+.form-control.input-fix{
+  width: 70%;
+}
+.primatyTitle{
+  font-style: bold;
+}
+.secondaryTitle{
+  font-style: oblique;
+}

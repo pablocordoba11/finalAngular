@@ -32,6 +32,10 @@ angular
         controller: 'AboutCtrl',
         controllerAs: 'about'
       })
+      .when('/pedido',{
+        templateUrl:'views/enviarPedido.html',
+        controller:'pedidoCtrl',
+      })
       .otherwise({
         redirectTo: '/'
       });
