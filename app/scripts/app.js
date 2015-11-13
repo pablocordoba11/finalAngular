@@ -32,11 +32,14 @@ angular
         controller: 'AboutCtrl',
         controllerAs: 'about'
       })
+      .when('/calendar',{
+        templateUrl:'views/calendar.html',
+        controller:'calendarCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
     uiGmapGoogleMapApiProvider.configure({
-        //    key: 'your api key',
         v: '3.20', //defaults to latest 3.X anyhow
         libraries: 'weather,geometry,visualization'
     });
