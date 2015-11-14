@@ -18,7 +18,9 @@ angular
     'ngTouch',
     'ui.grid',
     'toaster',
-    'uiGmapgoogle-maps'
+    'uiGmapgoogle-maps',
+    'ui.calendar',
+    'ui.bootstrap'
   ])
   .config(function ($routeProvider,uiGmapGoogleMapApiProvider) {
     $routeProvider
