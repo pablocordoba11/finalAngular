@@ -18,7 +18,8 @@ angular
     'ngTouch',
     'ui.grid',
     'toaster',
-    'uiGmapgoogle-maps'
+    'uiGmapgoogle-maps',
+    'chart.js'
   ])
   .config(function ($routeProvider,uiGmapGoogleMapApiProvider) {
     $routeProvider
@@ -35,6 +36,15 @@ angular
       .when('/pedido',{
         templateUrl:'views/enviarPedido.html',
         controller:'pedidoCtrl',
+      })
+      .when('/chart',{
+        templateUrl:'views/chart.html',
+        controller:'ChartCtrl',
+      })
+      .when('/login',{
+        templateUrl:'views/login.html',
+        controller:'LoginCtrl',
+        hideMenus: true
       })
       .otherwise({
         redirectTo: '/'
