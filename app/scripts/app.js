@@ -36,6 +36,11 @@ angular
         templateUrl:'views/enviarPedido.html',
         controller:'pedidoCtrl',
       })
+      .when('/login',{
+        templateUrl:'views/login.html',
+        controller:'LoginCtrl',
+        hideMenus: true
+      })
       .otherwise({
         redirectTo: '/'
       });
