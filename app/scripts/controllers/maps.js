@@ -10,6 +10,17 @@
 angular.module('dashboardApp')
   .controller('MapsCtrl',['factoryMaps', '$scope', function (factoryMaps, $scope) {
     console.log("Controladora mapas");
+    //$scope.$on('angular-spinkit:imageLoaded');
+    //$scope.sendAjax = function() {
+    $scope.prograssing = true;
+    // $http.get('data.json').then(function() {
+    //   //sucess
+    //   $scope.prograssing = false;
+    // } , function() {
+    //   //error
+    //   $scope.prograssing = false;
+    // });
+  //}
 
   factoryMaps.createByCoords(-33.333333, -60.216667, function (marker) {
       marker.options.labelContent = 'Pickupmeal';

@@ -39,6 +39,7 @@ module.exports = function(config) {
       'bower_components/underscore/underscore.js',
       'bower_components/Chart.js/Chart.js',
       'bower_components/angular-chart.js/dist/angular-chart.js',
+      'bower_components/angular-spinkit/build/angular-spinkit.js',
       'bower_components/angular-mocks/angular-mocks.js',
       // endbower
       "app/scripts/**/*.js",

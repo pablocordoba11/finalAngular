@@ -19,7 +19,8 @@ angular
     'ui.grid',
     'toaster',
     'uiGmapgoogle-maps',
-    'chart.js'
+    'chart.js',
+    'angular-spinkit'
   ])
   .config(function ($routeProvider,uiGmapGoogleMapApiProvider) {
     $routeProvider
