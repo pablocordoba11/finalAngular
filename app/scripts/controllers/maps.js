@@ -20,7 +20,7 @@ angular.module('dashboardApp')
     //   //error
     //   $scope.prograssing = false;
     // });
-  //}
+  // }
 
   factoryMaps.createByCoords(-33.333333, -60.216667, function (marker) {
       marker.options.labelContent = 'Pickupmeal';
