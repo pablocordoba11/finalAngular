@@ -19,7 +19,12 @@ angular
     'ui.grid',
     'toaster',
     'uiGmapgoogle-maps',
-    'chart.js'
+    'chart.js',
+    'angular-spinkit',
+    'ui.grid.selection',
+    'ui.grid.exporter',
+    'timer',
+    //'toastr'
   ])
   .config(function ($routeProvider,uiGmapGoogleMapApiProvider) {
     $routeProvider
@@ -40,6 +45,10 @@ angular
       .when('/chart',{
         templateUrl:'views/chart.html',
         controller:'ChartCtrl',
+      })
+      .when('/pum',{
+        templateUrl:'views/pumGrid.html',
+        controller:'PumgridCtrl'
       })
       .when('/login',{
         templateUrl:'views/login.html',

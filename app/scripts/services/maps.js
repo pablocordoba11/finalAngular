@@ -32,7 +32,6 @@ angular.module('dashboardApp')
             successCallback(marker);
         }
     }
-
     function createByCoords(latitude, longitude, successCallback) {
         var marker = create(latitude, longitude);
         invokeSuccessCallback(successCallback, marker);
