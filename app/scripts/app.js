@@ -24,6 +24,8 @@ angular
     'ui.grid.selection',
     'ui.grid.exporter',
     'timer',
+    'ngAria',
+    'ngMaterial'
     //'toastr'
   ])
   .config(function ($routeProvider,uiGmapGoogleMapApiProvider) {

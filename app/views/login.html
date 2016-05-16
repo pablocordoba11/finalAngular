@@ -19,3 +19,20 @@
       </div>
   </form>
 </div>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12">
+      <md-autocomplete md-selected-item="selectedItem" md-search-text="searchText" md-items="item in getMatches(searchText)" md-item-text="item.display">
+      <span md-highlight-text="searchText">{{item.display}}</span>
+    </md-autocomplete>
+    </div>
+  </div>
+  <div class="row">
+    <md-button> Flat Button </md-button>
+    <md-button href="http://google.com"> Flat link </md-button>
+    <md-button class="md-raised md-primary"> Raised Button </md-button>
+    <md-button ng-disabled="true"> Disabled Button </md-button>
+  </div>
+
+
+</div>
